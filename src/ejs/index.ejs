@@ -1,0 +1,24 @@
+<%- include('partial/_head') %>
+<body>
+<%- include('partial/_header') %>
+<main class="l-main">
+    <section class="container py-5">
+        <h1><i class="fas fa-fw fa-long-arrow-alt-up mr-2" aria-hidden="true"></i><%= parameters.title %><small class="ml-2" id="hello"></small></h1>
+        <p><%= parameters.description %></p>
+    </section>
+    <section class="container pb-5">
+        <h2>デコーダ</h2>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <textarea name="" id="origin" class="w-100" rows="10"></textarea>
+            </div>
+            <div class="col-12 col-lg-6">
+                <textarea name="" id="decoded" class="w-100" rows="10"></textarea>
+            </div>
+        </div>
+    </section>
+</main>
+<%- include('partial/_footer') %>
+<%- include('partial/_js_loader') %>
+</body>
+</html>
